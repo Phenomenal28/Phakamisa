@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Phakamisa"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCiNNWBiUORvactclYaW55T3dvPms6gts8" />
+
+        <activity android:name=".profile.ChangePasswordActivity" />
+        <activity android:name=".profile.UploadProfilePicActivity" />
+        <activity android:name=".profile.UpdateProfileActivity" />
+        <activity android:name=".profile.UpdateEmailActivity" />
+        <activity android:name=".profile.DeleteProfileActivity" />
+        <activity android:name=".profile.UserProfileActivity" />
+        <activity android:name=".profile.ForgotPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".donations.DonationMainActivity" />
+        <activity android:name=".donations.Donate" />
+        <activity android:name=".donations.DonationMap" />
+        <activity android:name=".donations.DonationHistory" />
+        <activity android:name=".donations.DonationMyPin" />
+        <activity android:name=".donations.DonationReceive" />
+        <activity android:name=".donations.DonationUserdataActivity" />
+        <activity
+            android:name=".post.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".post.CommentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".post.CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".post.Post"
+            android:exported="false" />
+        <activity
+            android:name=".volunteers.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".volunteers.ReceiveVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".volunteers.RequestVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".volunteers.VolunteersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".volunteers.VolunteerUserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

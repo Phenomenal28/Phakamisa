@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "670274532873",
+    "firebase_url": "https://phakamisa-9ba70-default-rtdb.firebaseio.com",
+    "project_id": "phakamisa-9ba70",
+    "storage_bucket": "phakamisa-9ba70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670274532873:android:f7aa42f6968ba774756ad8",
+        "android_client_info": {
+          "package_name": "com.example.phakamisa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZslWqotARiebYmpqRovD9WhPykl_LqTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
